@@ -1,0 +1,74 @@
+<html>
+<title>TUGASAKHIR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3cs.css">
+<body>
+<div class="w3-container">
+</div>
+<img src="bekron.png" style="width: 100%;">
+<div class="w3-bar w3-orange">
+ <button class="w3-bar-item w3-button" onclick="openKota('top')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('bottom')">Sayuran</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('left')">Buah-Buahan</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('right')">Daging dan Telur</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('opacity')">Kacang Dan Biji - Bijian</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('zoom')">about me</button>
+</div>
+<div id="top" class="w3-container kota w3-animate-top" style="display:none">
+    <center>
+        <h1>Pilihan Makanan Sehat yang Perlu Dikonsumsi Setiap Hari</h1>
+        <img src="makan.png" style="width: 20%;">
+    </div>
+<div id="bottom" class="w3-container kota w3-animate-bottom" style="display:none">
+    <center>
+ <h2>Sayuran</h2>
+ <img src="sayur.png" style="width: 20%;">
+ <p>Sayur-sayuran termasuk dalam jenis makanan sehat karena mengandung banyak nutrisi penting, seperti serat, vitamin A, vitamin C, vitamin K, magnesium, kalsium, zat besi, folat, dan kalium, yang sangat baik untuk kesehatan.
+    Selain itu, sayuran juga kaya akan antioksidan yang dapat melindungi tubuh dari kerusakan akibat radikal bebas dan mengurangi berbagai risiko penyakit kronis, seperti penyakit jantung koroner, diabetes tipe 2, dan kanker.</p>
+</div>
+<div id="left" class="w3-container kota w3-animate-left" style="display:none">
+    <center><h2>Buah-Buahan</h2>
+       <img src="buah.png" style="width: 20%;">
+    <p>Selain sayur, buah juga mengandung beragam nutrisi yang dibutuhkan tubuh, seperti serat, mineral, vitamin, dan antioksidan. Beberapa jenis buah yang populer karena kaya akan nutrisi meliputi:
+   
+       Apel
+       Alpukat
+       Jeruk
+       Pisang
+       Alpukat
+       Beri-berian, seperti blueberry dan stroberi
+       Selain itu, beberapa buah lain seperti buah pala ceri, anggur, nanas, kiwi, lemon, dan mangga, juga bisa menjadi pilihan yang baik untuk dikonsumsi.</p>
+   </div>
+<div id="right" class="w3-container kota w3-animate-right" style="display:none">
+    <center>
+        <h2>Daging dan Telur</h2>
+        <img src="ayam.png">
+        <p>Daging merupakan salah satu makanan sehat karena kaya akan nutrisi. Daging sapi tanpa lemak dan dada ayam mengandung protein dan zat besi paling tinggi, bahkan kandungan lemaknya lebih rendah dibandingkan dengan jenis daging lainnya.
+            Selain daging, telur juga termasuk dalam makanan sehat. Selain tinggi protein, telur juga mengandung nutrisi lengkap, mulai dari vitamin, mineral, lemak tak jenuh, hingga antioksidan.
+            </p>
+</div>
+<div id="opacity" class="w3-container kota w3-animate-opacity" style="display:none">
+    <center>
+        <h2>Kacang dan Biji - Bijian</h2>
+        <img src="kacang.png" style="width: 20%;">
+        <p>Makanan sehat yang sarat akan nutrisi berikutnya adalah kacang-kacangan dan biji-bijian. Contohnya adalah kacang tanah, kacang mete, kacang almond, chia seed, biji labu, dan biji wijen.
+            Kacang-kacangan dan biji-bijian tersebut tidak hanya mengandung protein dan serat yang tinggi, tetapi juga kaya akan vitamin dan mineral seperti magnesium dan vitamin E.</p>
+        </div>
+<div id="zoom" class="w3-container kota w3-animate-zoom" style="display:none">
+            <center>
+                <h2>NAMA : SYIPA AFIYANI</h2>
+                <h2>NIM  : 10122047</h2>
+                <h2>KELAS : IF 2 </h2>
+            </div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
